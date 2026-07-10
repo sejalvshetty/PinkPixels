@@ -1,0 +1,169 @@
+/* ==========================
+   HOME LAYOUT
+========================== */
+
+.home-container{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+
+    gap:60px;
+
+    padding:50px 70px;
+
+}
+
+/* ==========================
+   LEFT PANEL
+========================== */
+
+.left-panel{
+
+    width:30%;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    gap:35px;
+
+}
+
+/* ==========================
+   RIGHT PANEL
+========================== */
+
+.right-panel{
+
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    gap:40px;
+
+}
+
+/* ==========================
+   GOALS RIBBON
+========================== */
+
+.goals-banner{
+
+    width:420px;
+    height:80px;
+
+    background:#d9688d;
+
+    clip-path:polygon(
+        0 50%,
+        6% 0,
+        94% 0,
+        100% 50%,
+        94% 100%,
+        6% 100%
+    );
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+#goalYear{
+
+    font-family:var(--logo-font);
+
+    font-size:3.3rem;
+
+    font-weight:normal;
+
+}
+
+/* ==========================
+   GOAL CARDS
+========================== */
+
+.goal-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:55px;
+
+    width:100%;
+
+}
+
+.goal-card{
+
+    width:340px;
+
+    min-height:380px;
+
+    background:var(--card);
+
+    padding:25px;
+
+    box-shadow:8px 8px rgba(0,0,0,.08);
+
+}
+
+.goal-card ul{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+.goal-card li{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:10px;
+
+    font-size:1.08rem;
+
+}
+
+.goal-card input{
+
+    margin-top:4px;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:1200px){
+
+    .home-container{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+    .left-panel{
+
+        width:100%;
+
+    }
+
+    .goal-wrapper{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+}

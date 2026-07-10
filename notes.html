@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pink Pixels | Notes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Noto+Serif+Display:wght@400;600;700&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/notes.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="../index.html" class="logo">
+        Pink Pixels
+    </a>
+
+    <div class="subject-heading">
+
+        <h1 id="subjectTitle">
+            Subject
+        </h1>
+
+    </div>
+
+</header>
+
+<main class="notes-page">
+
+<h2 id="monthTitle">
+Month
+</h2>
+
+<div class="note-section">
+
+<h3>📚 What topics were covered?</h3>
+
+<textarea
+id="topics"
+placeholder="Write the topics covered today..."></textarea>
+
+</div>
+
+
+<div class="note-section">
+
+<h3>💡 Did you understand?</h3>
+
+<div class="radio-group">
+
+<label>
+
+<input type="radio"
+name="understood"
+value="yes">
+
+Yes
+
+</label>
+
+<label>
+
+<input type="radio"
+name="understood"
+value="no">
+
+No
+
+</label>
+
+</div>
+
+<div id="understoodBox">
+
+<h3>✨ What did you understand?</h3>
+
+<textarea
+id="understoodText"
+placeholder="Explain in your own words..."></textarea>
+
+</div>
+
+</div>
+
+
+<div class="note-section">
+
+<h3>📖 What I need to learn</h3>
+
+<textarea
+id="learn"
+placeholder="Things to revise or learn later..."></textarea>
+
+</div>
+
+
+<div class="note-section">
+
+<h3>⭐ Revision Points</h3>
+
+<textarea
+id="revision"
+placeholder="Quick revision notes..."></textarea>
+
+</div>
+
+<div class="buttons">
+
+<button id="saveBtn">
+
+Save
+
+</button>
+
+<button
+class="back-btn"
+onclick="history.back()">
+
+← Back
+
+</button>
+
+</div>
+
+</main>
+
+<script src="../js/notes.js"></script>
+
+</body>
+
+</html>

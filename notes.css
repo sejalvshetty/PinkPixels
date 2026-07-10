@@ -1,0 +1,181 @@
+/* ===========================
+   NOTES PAGE
+=========================== */
+
+.notes-page{
+
+    max-width:1000px;
+
+    margin:40px auto;
+
+    padding:0 30px 60px;
+
+}
+
+/* ===========================
+   SUBJECT & MONTH
+=========================== */
+
+#monthTitle{
+
+    font-family:var(--logo-font);
+
+    font-size:4rem;
+
+    font-weight:normal;
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+/* ===========================
+   NOTE CARDS
+=========================== */
+
+.note-section{
+
+    background:var(--card);
+
+    padding:25px;
+
+    border-radius:18px;
+
+    margin-bottom:28px;
+
+    box-shadow:8px 8px rgba(0,0,0,.08);
+
+}
+
+.note-section h3{
+
+    font-family:var(--heading-font);
+
+    font-size:1.7rem;
+
+    font-weight:normal;
+
+    margin-bottom:15px;
+
+}
+
+/* ===========================
+   TEXTAREA
+=========================== */
+
+textarea{
+
+    width:100%;
+
+    min-height:160px;
+
+    resize:vertical;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#fff9fc;
+
+    font-family:var(--body-font);
+
+    font-size:1rem;
+
+    line-height:1.7;
+
+    outline:none;
+
+}
+
+textarea:focus{
+
+    box-shadow:0 0 0 3px rgba(236,155,173,.45);
+
+}
+
+/* ===========================
+   RADIO BUTTONS
+=========================== */
+
+.radio-group{
+
+    display:flex;
+
+    gap:40px;
+
+    margin-bottom:20px;
+
+    font-size:1.1rem;
+
+}
+
+.radio-group label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+/* ===========================
+   UNDERSTOOD BOX
+=========================== */
+
+#understoodBox{
+
+    display:none;
+
+    margin-top:20px;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-top:40px;
+
+}
+
+#saveBtn,
+.back-btn{
+
+    background:var(--navbar);
+
+    padding:12px 30px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:1.2rem;
+
+    font-family:var(--heading-font);
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+#saveBtn:hover,
+.back-btn:hover{
+
+    background:#d66f8e;
+
+    transform:translateY(-2px);
+
+}

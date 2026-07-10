@@ -1,0 +1,298 @@
+/* ==========================
+   ROOT VARIABLES
+========================== */
+
+:root{
+
+    --bg:#f1c9d2;
+    --navbar:#ec9bad;
+    --card:#db8a9c;
+    --accent:#ffe7fc;
+    --text:#1c1817;
+    --border:#57363d;
+
+    --logo-font:"Tangerine",cursive;
+    --heading-font:"Lalezar",cursive;
+    --body-font:"Noto Serif Display",serif;
+
+}
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--body-font);
+
+}
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+button{
+
+    cursor:pointer;
+    border:none;
+    font-family:var(--heading-font);
+
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+.editable{
+
+    outline:none;
+
+}
+
+/* ==========================
+   CLOCK
+========================== */
+
+.clock-container{
+
+    width:340px;
+    height:340px;
+
+    border:4px solid var(--border);
+    border-radius:50%;
+
+    background:var(--accent);
+
+    position:relative;
+
+}
+
+#analogClock{
+
+    width:100%;
+    height:100%;
+
+    position:relative;
+
+}
+
+.number{
+
+    position:absolute;
+
+    font-family:var(--heading-font);
+
+    font-size:1.5rem;
+
+    transform:translate(-50%,-50%);
+
+}
+
+.hand{
+
+    position:absolute;
+
+    left:50%;
+    bottom:50%;
+
+    transform-origin:bottom center;
+
+    border-radius:10px;
+
+}
+
+#hour{
+
+    width:6px;
+    height:85px;
+
+    background:#222;
+
+}
+
+#minute{
+
+    width:4px;
+    height:120px;
+
+    background:#333;
+
+}
+
+#second{
+
+    width:2px;
+    height:135px;
+
+    background:#d34b73;
+
+}
+
+#analogClock::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:15px;
+    height:15px;
+
+    border-radius:50%;
+
+    background:black;
+
+}
+
+/* ==========================
+   STOPWATCH
+========================== */
+
+.stopwatch-container{
+
+    width:260px;
+
+    background:#f8dfe8;
+
+    border:3px solid var(--border);
+
+    border-radius:30px;
+
+    padding:20px;
+
+    text-align:center;
+
+}
+
+#stopwatchDisplay{
+
+    font-family:var(--heading-font);
+
+    font-size:2.4rem;
+
+    margin-bottom:20px;
+
+}
+
+.stopwatch-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+}
+
+.stopwatch-buttons button{
+
+    background:var(--navbar);
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    transition:.2s;
+
+}
+
+.stopwatch-buttons button:hover{
+
+    background:#d66f8e;
+
+}
+
+/* ==========================
+   DATE
+========================== */
+
+#currentDate{
+
+    font-family:var(--logo-font);
+
+    font-size:4rem;
+
+    font-weight:normal;
+
+}
+
+/* ==========================
+   EDIT BUTTON
+========================== */
+
+#editBtn{
+
+    position:fixed;
+
+    right:30px;
+    bottom:30px;
+
+    padding:12px 25px;
+
+    border-radius:10px;
+
+    background:var(--navbar);
+
+    font-size:1.2rem;
+
+}
+
+#editBtn:hover{
+
+    background:#d66f8e;
+
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#efbfd0;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#db8a9c;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#c96b89;
+
+}

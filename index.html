@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pink Pixels</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Noto+Serif+Display:wght@400;600;700&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            Pink Pixels
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="pages/todo.html">To Do</a></li>
+                <li><a href="pages/timetable.html">Timetable</a></li>
+                <li><a href="pages/wishlist.html">Wishlist</a></li>
+                <li><a href="pages/cs.html">CS</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="home-container">
+
+        <!-- LEFT -->
+
+        <section class="left-panel">
+
+            <!-- Analog Clock -->
+
+            <div class="clock-container">
+                <div id="analogClock"></div>
+            </div>
+
+            <!-- Stopwatch -->
+
+            <div class="stopwatch-container">
+
+                <div id="stopwatchDisplay">
+                    00 : 00 : 00
+                </div>
+
+                <div class="stopwatch-buttons">
+                    <button id="startBtn">Start</button>
+                    <button id="pauseBtn">Pause</button>
+                    <button id="resetBtn">Reset</button>
+                </div>
+
+            </div>
+
+            <!-- Date -->
+
+            <h2 id="currentDate">
+                dd month yyyy
+            </h2>
+
+        </section>
+
+        <!-- RIGHT -->
+
+        <section class="right-panel">
+
+            <div class="goals-banner">
+                <h2 id="goalYear">
+                    yyyy Goals
+                </h2>
+            </div>
+
+            <div class="goal-wrapper">
+
+                <!-- Card 1 -->
+
+                <div class="goal-card">
+
+                    <ul>
+
+                        <li>
+                            <input type="checkbox" data-id="home-goal-1">
+                            <span class="editable" data-id="goal1"> Get &gt;90% in every subject.</span>
+                        </li>
+
+                        <li>
+                            <input type="checkbox">
+                            <span class="editable" data-id="goal2">Score &gt;8.5 CGPA.</span>
+                        </li>
+
+                        <li>
+                            <input type="checkbox">
+                            <span class="editable" data-id="goal3">Complete CC hours.</span>
+                        </li>
+
+                        <li>
+                            <input type="checkbox">
+                            <span class="editable" data-id="goal4">Join Green Club.</span>
+                        </li>
+
+                        <li>
+                            <input type="checkbox">
+                            <span class="editable" data-id="goal5">70% Attendance.</span>
+                        </li>
+
+                        <li>
+                            <input type="checkbox">
+                            <span class="editable" data-id="goal6">.......................</span>
+                        </li>
+
+                        <li>
+                            <input type="checkbox">
+                            <span class="editable" data-id="goal7">.......................</span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="goal-card">
+
+                    <ul>
+
+                        <li>
+                            <input type="checkbox">
+                            <span class="editable" data-id="goal8">Make new friends.</span>
+                        </li>
+
+                        <li>
+                            <input type="checkbox">
+                            <span class="editable" data-id="goal9">Public Speaking.</span>
+                        </li>
+
+                        <li>
+                            <input type="checkbox">
+                            <span class="editable" data-id="goal10">Craft Projects.</span>
+                        </li>
+
+                        <li>
+                            <input type="checkbox">
+                            <span class="editable" data-id="goal11">Read at least 6 books.</span>
+                        </li>
+
+                        <li>
+                            <input type="checkbox">
+                            <span class="editable" data-id="goal12">NSS Camp.</span>
+                        </li>
+
+                        <li>
+                            <input type="checkbox">
+                            <span class="editable" data-id="goal13">Diary Entries.</span>
+                        </li>
+
+                        <li>
+                            <input type="checkbox">
+                            <span class="editable" data-id="goal14">Become Confident.</span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Edit Button -->
+
+            <button id="editBtn">
+                Edit
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- JS -->
+
+    <script src="js/navigation.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/stopwatch.js"></script>
+    <script src="js/editable.js"></script>
+    <script src="js/storage.js"></script>
+
+</body>
+</html>
