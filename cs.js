@@ -4,18 +4,19 @@ const semesterSelect = document.getElementById("semesterSelect");
 const subjectCards = document.querySelectorAll(".subject-card");
 const editableSubjects = document.querySelectorAll(".subject-card .editable");
 
-// LOAD SAVED SEM
+// LOAD SAVED SEMESTER
 
 semesterSelect.value =
-    localStorage.getItem("selectedSemester")  || "1";
+localStorage.getItem("selectedSemester") || "1";
 
-//DEFAULT SUBJECTS
+// DEFAULT SUBJECTS
 
 const defaultSubjects = {
+
     1: [
         "Python",
         "Computer Fundamentals",
-        "WebTech",
+        "Web Tech",
         "Linux",
         "EVS",
         "Business Communication",
@@ -37,49 +38,47 @@ const defaultSubjects = {
     3: [
         "Subject 1",
         "Subject 2",
-        "Subject",
         "Subject 3",
         "Subject 4",
         "Subject 5",
         "Subject 6",
         "Subject 7",
-        "Subject 8",
+        "Subject 8"
     ],
 
     4: [
         "Subject 1",
         "Subject 2",
-        "Subject",
         "Subject 3",
         "Subject 4",
         "Subject 5",
         "Subject 6",
         "Subject 7",
-        "Subject 8",
+        "Subject 8"
     ],
 
     5: [
         "Subject 1",
         "Subject 2",
-        "Subject",
         "Subject 3",
         "Subject 4",
         "Subject 5",
         "Subject 6",
         "Subject 7",
-        "Subject 8",
+        "Subject 8"
     ],
 
     6: [
         "Subject 1",
         "Subject 2",
-        "Subject",
         "Subject 3",
         "Subject 4",
         "Subject 5",
         "Subject 6",
         "Subject 7",
-        "Subject 8",
+        "Subject 8"
+    ]
+};
 
 // LOAD SUBJECTS
 
@@ -97,7 +96,6 @@ function loadSemesterSubjects(){
     });
 }
 
-
 // SAVE SUBJECTS
 
 function saveSemesterSubjects(){
@@ -111,11 +109,11 @@ function saveSemesterSubjects(){
     });
 }
 
-/* make function available to editable.js*/
+/* Make function available to editable.js*/
 
 window.saveSemesterSubjects = saveSemesterSubjects;
 
-// CHANGE SEM
+// CHANGE SEMESTER
 
 semesterSelect.addEventListener("change",()=>{
     localStorage.setItem(
@@ -125,7 +123,7 @@ semesterSelect.addEventListener("change",()=>{
     loadSemesterSubjects();
 });
 
-// OPEN MONTH PG
+// OPEN MONTH PAGE
 
 subjectCards.forEach(card=>{
     card.addEventListener("click",(e)=>{
@@ -146,14 +144,6 @@ subjectCards.forEach(card=>{
     });
 });
 
-
 // INITIAL LOAD
 
 loadSemesterSubjects();
-
-
-
-
-
-
-        
